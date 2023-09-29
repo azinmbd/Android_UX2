@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="txtSample">Sample Texf\nLine1\nLine2</string>
+    <string name="txtImage">Bird or Fire</string>
+    <string name="txtShowText">Show Tetx</string>
+    <string name="txtShowBoth">Show Both</string>
+    <string name="txtShowImage">Show Image </string>
+></resources>
