@@ -78,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
         txtViewSample.setOnTouchListener(new CustomTouchListener(MainActivity.this){
             @Override
             public void onSwipeDown() {
+                int horzGravity = txtViewSample.getGravity() & Gravity.HORIZONTAL_GRAVITY_MASK;
+                txtViewSample.setGravity(horzGravity | Gravity.BOTTOM);
                 super.onSwipeDown();
             }
 
@@ -88,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSwipeLeft() {
+                int vertiGravity = txtViewSample.getGravity() & Gravity.VERTICAL_GRAVITY_MASK;
+                txtViewSample.setGravity(vertiGravity | Gravity.LEFT);
                 super.onSwipeLeft();
             }
 
