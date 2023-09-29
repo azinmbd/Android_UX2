@@ -9,6 +9,7 @@ import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -92,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSwipeRight() {
+                int vertiGravity = txtViewSample.getGravity() & Gravity.VERTICAL_GRAVITY_MASK;
+                txtViewSample.setGravity(vertiGravity | Gravity.RIGHT);
                 super.onSwipeRight();
             }
 
